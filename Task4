@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Gallery</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg, #c084fc, #7c3aed);
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:white;
+            margin-bottom:40px;
+            font-size:40px;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            border:5px solid #6a0dad;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+            text-align:center;
+        }
+
+        .product-name{
+            font-size:22px;
+            color:#6a0dad;
+            margin-bottom:10px;
+            font-weight:bold;
+        }
+
+        .price{
+            font-size:20px;
+            color:#333;
+            margin-bottom:15px;
+        }
+
+        .description{
+            font-size:15px;
+            color:#666;
+            margin-bottom:20px;
+        }
+
+        .buy-btn{
+            background:#7c3aed;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:10px;
+            cursor:pointer;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        .buy-btn:hover{
+            background:#5b21b6;
+            transform:scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>E-Commerce Product Gallery</h1>
+
+    <div class="gallery">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="C:\Users\Reshmashree\Downloads\ryan-waring-164_6wVEHfI-unsplash.jpg" alt="Shoes">
+
+            <div class="card-content">
+                <div class="product-name">Running Shoes</div>
+
+                <div class="price">₹2,499</div>
+
+                <div class="description">
+                    Comfortable and stylish running shoes for daily use.
+                </div>
+
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="card">
+            <img src="C:\Users\Reshmashree\Downloads\pexels-deise-elen-2149983761-31406903.jpg" alt="Watch">
+
+            <div class="card-content">
+                <div class="product-name">Smart Watch</div>
+
+                <div class="price">₹4,999</div>
+
+                <div class="description">
+                    Modern smartwatch with fitness tracking features.
+                </div>
+
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="card">
+            <img src="C:\Users\Reshmashree\Downloads\rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg" alt="Phone">
+
+            <div class="card-content">
+                <div class="product-name">Smart Phone</div>
+
+                <div class="price">₹24,999</div>
+
+                <div class="description">
+                    High-performance smartphone with advanced camera.
+                </div>
+
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="card">
+            <img src="C:\Users\Reshmashree\Downloads\c-d-x-PDX_a_82obo-unsplash.jpg" alt="Headphones">
+
+            <div class="card-content">
+                <div class="product-name">Headphones</div>
+
+                <div class="price">₹1,999</div>
+
+                <div class="description">
+                    Wireless headphones with crystal clear sound quality.
+                </div>
+
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
